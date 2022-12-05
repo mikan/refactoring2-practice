@@ -65,7 +65,9 @@ function statement(invoice, plays) {
   }
 }
 
-const plays = require("../01-the-starting-point/plays.json");
-for (const invoice of require("../01-the-starting-point/invoices.json")) {
+import plays from "../01-the-starting-point/plays.json" assert { type: "json" };
+import invoices from "../01-the-starting-point/invoices.json" assert { type: "json" };
+
+for (const invoice of invoices) {
   console.log(statement(invoice, plays));
 }

@@ -43,7 +43,9 @@ function statement(invoice, plays) {
   return result;
 }
 
-const plays = require("./plays.json");
-for (const invoice of require("./invoices.json")) {
+import plays from "./plays.json" assert { type: "json" };
+import invoices from "./invoices.json" assert { type: "json" };
+
+for (const invoice of invoices) {
   console.log(statement(invoice, plays));
 }
