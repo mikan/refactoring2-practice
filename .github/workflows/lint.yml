@@ -6,7 +6,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Install packages
-        run: npm ci
+        run: npm i
       - name: Prettier
         run: npm run fmt:check
       - name: ESLint
