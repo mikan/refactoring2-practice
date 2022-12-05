@@ -10,3 +10,4 @@ ch01s04:
 	cd ch01/04-decomposing-the-statement-function && node statement.js
 ch01s06:
 	cd ch01/06-splitting-the-phases && node statement.js
+	open ch01/06-splitting-the-phases/result.html
