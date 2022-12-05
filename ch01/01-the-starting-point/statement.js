@@ -35,9 +35,7 @@ function statement(invoice, plays) {
     // 喜劇のときは 10 人につき、さらにポイントを加算
     if ("comedy" === play.type) volumeCredits += Math.floor(perf.audience / 5);
     // 注文の内訳を出力
-    result += `  ${play.name}: ${format(thisAmount / 100)} (${
-      perf.audience
-    } seats)\n`;
+    result += `  ${play.name}: ${format(thisAmount / 100)} (${perf.audience} seats)\n`;
     totalAmount += thisAmount;
   }
   result += `Amount owed is ${format(totalAmount / 100)}\n`;

@@ -1,9 +1,7 @@
 function statement(invoice, plays) {
   let result = `Statement for ${invoice.customer}\n`;
   for (let perf of invoice.performances) {
-    result += `  ${playFor(perf).name}: ${usd(amountFor(perf))} (${
-      perf.audience
-    } seats)\n`;
+    result += `  ${playFor(perf).name}: ${usd(amountFor(perf))} (${perf.audience} seats)\n`;
   }
   result += `Amount owed is ${usd(totalAmount())}\n`;
   result += `You earned ${totalVolumeCredits()} credits\n`;
@@ -38,8 +36,7 @@ function statement(invoice, plays) {
   function volumeCreditsFor(aPerformance) {
     let result = 0;
     result += Math.max(aPerformance.audience - 30, 0);
-    if ("comedy" === playFor(aPerformance).type)
-      result += Math.floor(aPerformance.audience / 5);
+    if ("comedy" === playFor(aPerformance).type) result += Math.floor(aPerformance.audience / 5);
     return result;
   }
 
