@@ -6,6 +6,8 @@ fmt:
 	npm run lint:fix
 ch01s01:
 	cd ch01/01-the-starting-point && node statement.js
+ch01s01go:
+	cd ch01/01-the-starting-point && go run statement.go
 ch01s04:
 	cd ch01/04-decomposing-the-statement-function && node statement.js
 ch01s06:
