@@ -1,7 +1,5 @@
 {
-  "extends": [
-    "eslint:recommended"
-  ],
+  "extends": ["eslint:recommended", "prettier"],
   "plugins": [],
   "parserOptions": {
     "ecmaVersion": 13

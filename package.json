@@ -3,9 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "lint": "eslint **/*.js"
+    "lint": "eslint **/*.js",
+    "lint:fix": "eslint **/*.js --fix",
+    "fmt": "prettier --write --ignore-path .gitignore .",
+    "fmt:check": "prettier --check --ignore-path .gitignore ."
   },
   "devDependencies": {
-    "eslint": "^8.29.0"
+    "eslint": "^8.29.0",
+    "eslint-config-prettier": "^8.5.0",
+    "prettier": "^2.8.0"
   }
 }
