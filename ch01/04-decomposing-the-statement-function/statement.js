@@ -65,8 +65,10 @@ function statement(invoice, plays) {
   }
 }
 
-import plays from "../01-the-starting-point/plays.json" assert { type: "json" };
-import invoices from "../01-the-starting-point/invoices.json" assert { type: "json" };
+import fs from "fs";
+
+const plays = JSON.parse(fs.readFileSync("../01-the-starting-point/plays.json", "utf-8"));
+const invoices = JSON.parse(fs.readFileSync("../01-the-starting-point/invoices.json", "utf-8"));
 
 for (const invoice of invoices) {
   console.log(statement(invoice, plays));

@@ -1,6 +1,12 @@
+lint:
+	npm run fmt:check
+	npm run lint
+fmt:
+	npm run fmt
+	npm run lint:fix
 ch01s01:
-	node ch01/01-the-starting-point/statement.js
+	cd ch01/01-the-starting-point && node statement.js
 ch01s04:
-	node ch01/04-decomposing-the-statement-function/statement.js
+	cd ch01/04-decomposing-the-statement-function && node statement.js
 ch01s06:
-	node ch01/06-splitting-the-phases/statement.js
+	cd ch01/06-splitting-the-phases && node statement.js
