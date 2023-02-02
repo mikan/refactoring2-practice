@@ -5,7 +5,7 @@ class Province {
     this._totalProduction = 0;
     this._demand = doc.demand;
     this._price = doc.price;
-    doc._producers.forEach(d => this.addProducer(new Producer(this, d)));
+    doc._producers.forEach((d) => this.addProducer(new Producer(this, d)));
   }
 
   addProducer(arg) {
