@@ -7,11 +7,15 @@
     "lint": "eslint **/*.js",
     "lint:fix": "eslint **/*.js --fix",
     "fmt": "prettier --write --ignore-path .gitignore .",
-    "fmt:check": "prettier --check --ignore-path .gitignore ."
+    "fmt:check": "prettier --check --ignore-path .gitignore .",
+    "test": "mocha ch*/**/*.test.js"
   },
   "devDependencies": {
     "eslint": "^8.29.0",
     "eslint-config-prettier": "^8.5.0",
-    "prettier": "^2.8.0"
+    "eslint-plugin-mocha": "^10.1.0",
+    "mocha": "^8.4.0",
+    "prettier": "^2.8.0",
+    "tape": "^5.6.3"
   }
 }
