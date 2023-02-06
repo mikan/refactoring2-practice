@@ -1,6 +1,7 @@
 # refactoring2-practice
 
 [![Lint](https://github.com/mikan/refactoring2-practice/actions/workflows/lint.yml/badge.svg)](https://github.com/mikan/refactoring2-practice/actions/workflows/lint.yml)
+[![Test](https://github.com/mikan/refactoring2-practice/actions/workflows/test.yml/badge.svg)](https://github.com/mikan/refactoring2-practice/actions/workflows/test.yml)
 
 リファクタリング第 2 版の [mikan](https://github.com/mikan) の写経リポジトリです。
 
