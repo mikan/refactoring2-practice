@@ -4,6 +4,9 @@ lint:
 fmt:
 	npm run fmt
 	npm run lint:fix
+.PHONY: test
+test:
+	npm run test
 ch01s01:
 	cd ch01/01-the-starting-point && node statement.js
 ch01s01go:
