@@ -7,9 +7,9 @@ describe("ch04s05 province", function () {
   beforeEach(function () {
     asia = new Province(sampleProvinceData());
   });
-  it("change production", function() {
+  it("change production", function () {
     asia.producers[0].production = 20;
     expect(asia.shortfall).equal(-6);
     expect(asia.profit).equal(292);
-  })
+  });
 });
