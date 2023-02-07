@@ -1,3 +1,5 @@
+import { Producer } from "../02-sample-code-to-test/province.js";
+
 export class Province {
   constructor(doc) {
     this._name = doc.name;
@@ -5,7 +7,9 @@ export class Province {
     this._totalProduction = 0;
     this._demand = doc.demand;
     this._price = doc.price;
-    doc.producers.forEach((d) => this.addProducer(new Producer(this, d)));
+    if (doc.producers) {
+      doc.producers.forEach((d) => this.addProducer(new Producer(this, d)));
+    }
   }
 
   addProducer(arg) {
@@ -72,37 +76,5 @@ export class Province {
 
   get satisfiedDemand() {
     return Math.min(this._demand, this.totalProduction);
-  }
-}
-
-export class Producer {
-  constructor(aProvince, data) {
-    this._province = aProvince;
-    this._cost = data.cost;
-    this._name = data.name;
-    this._production = data.production || 0;
-  }
-
-  get name() {
-    return this._name;
-  }
-
-  get cost() {
-    return this._cost;
-  }
-
-  set cost(arg) {
-    this._cost = parseInt(arg);
-  }
-
-  get production() {
-    return this._production;
-  }
-
-  set production(amountStr) {
-    const amount = parseInt(amountStr);
-    const newProduction = Number.isNaN(amount) ? 0 : amount;
-    this._province.totalProduction += newProduction - this._production;
-    this._production = newProduction;
   }
 }
