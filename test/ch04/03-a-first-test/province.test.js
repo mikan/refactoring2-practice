@@ -1,6 +1,6 @@
 import assert from "assert";
-import { Province } from "../02-sample-code-to-test/province.js";
-import { sampleProvinceData } from "../02-sample-code-to-test/sample.js";
+import { Province } from "../../../ch04/02-sample-code-to-test/province.js";
+import { sampleProvinceData } from "../../../ch04/02-sample-code-to-test/sample.js";
 
 describe("province", function () {
   it("shortfall", function () {
