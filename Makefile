@@ -1,12 +1,15 @@
 lint:
 	npm run fmt:check
 	npm run lint
+
 fmt:
 	npm run fmt
 	npm run lint:fix
+
 .PHONY: test
 test:
 	npm run test
+
 ch01s01:
 	cd ch01/01-the-starting-point && node statement.js
 ch01s01go:
@@ -18,3 +21,7 @@ ch01s06:
 	open ch01/06-splitting-the-phases/result.html
 ch01s08:
 	cd ch01/08-reorganizing-the-calculations-by-type && node statement.js
+ch06s01:
+	node ch06/01-extract-function/owing.js
+ch06s01v2:
+	node ch06/01-extract-function/owing2.js
