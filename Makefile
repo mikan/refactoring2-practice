@@ -45,3 +45,5 @@ ch06s02v5:
 	node ch06/02-inline-function/reportLines.js
 ch06s02v6:
 	node ch06/02-inline-function/reportLines2.js
+ch06s03:
+	node ch06/03-extract-variable/price.js
