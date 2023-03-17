@@ -27,3 +27,5 @@ ch06s01v2:
 	node ch06/01-extract-function/owing2.js
 ch06s01v3:
 	node ch06/01-extract-function/owing3.js
+ch06s01v4:
+	node ch06/01-extract-function/owing4.js
