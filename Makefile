@@ -57,3 +57,9 @@ ch06s04:
 	node ch06/04-inline-variable/price.js
 ch06s04v2:
 	node ch06/04-inline-variable/price2.js
+ch06s05:
+	node ch06/05-change-function-declaration/circum.js
+ch06s05v2:
+	node ch06/05-change-function-declaration/circumference.js
+ch06s05v3:
+	node ch06/05-change-function-declaration/circum2.js
