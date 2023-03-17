@@ -53,3 +53,5 @@ ch06s03v3:
 	node ch06/03-extract-variable/price3.js
 ch06s03v4:
 	node ch06/03-extract-variable/price4.js
+ch06s04:
+	node ch06/04-inline-variable/price.js
