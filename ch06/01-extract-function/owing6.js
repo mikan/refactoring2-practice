@@ -1,4 +1,4 @@
-import { ClockWrapper } from "./clock-wrapper.js";
+import { ClockWrapper } from "./clockWrapper.js";
 
 function printOwing(invoice) {
   printBanner();
