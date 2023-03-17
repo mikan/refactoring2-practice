@@ -7,4 +7,4 @@ function price(order) {
   );
 }
 
-console.log(price({quantity: 3, itemPrice: 100}));
+console.log(price({ quantity: 3, itemPrice: 100 }));
