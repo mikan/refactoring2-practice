@@ -37,3 +37,7 @@ ch06s02:
 	node ch06/02-inline-function/rating.js
 ch06s02v2:
 	node ch06/02-inline-function/rating2.js
+ch06s02v3:
+	node ch06/02-inline-function/rating3.js
+ch06s02v4:
+	node ch06/02-inline-function/rating4.js
