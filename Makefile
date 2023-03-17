@@ -33,3 +33,7 @@ ch06s01v5:
 	node ch06/01-extract-function/owing5.js
 ch06s01v6:
 	node ch06/01-extract-function/owing6.js
+ch06s02:
+	node ch06/02-inline-function/rating.js
+ch06s02v2:
+	node ch06/02-inline-function/rating2.js
