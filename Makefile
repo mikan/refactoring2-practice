@@ -43,3 +43,5 @@ ch06s02v4:
 	node ch06/02-inline-function/rating4.js
 ch06s02v5:
 	node ch06/02-inline-function/reportLines.js
+ch06s02v6:
+	node ch06/02-inline-function/reportLines2.js
