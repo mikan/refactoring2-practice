@@ -63,3 +63,7 @@ ch06s05v2:
 	node ch06/05-change-function-declaration/circumference.js
 ch06s05v3:
 	node ch06/05-change-function-declaration/circum2.js
+ch06s05v4:
+	node ch06/05-change-function-declaration/book.js
+ch06s05v5:
+	node ch06/05-change-function-declaration/book2.js
